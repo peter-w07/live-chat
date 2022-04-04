@@ -28,7 +28,7 @@ app.get('*', (req, res) => {
 	res.send('404 Not Found');
 });
 
-http.listen(3000, () => console.log('server started'));
+http.listen(440, () => console.log('server started'));
 
 io.engine.generateId = (req) => {
 	return randHex(6);
